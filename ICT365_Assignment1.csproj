@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D46D7822-B30F-46C1-A25F-F1E866ECE1BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ICT365_Assignment1</RootNamespace>
+    <AssemblyName>ICT365_Assignment1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ICT365_Assignment1.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\ActivityEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ActivityEventForm.Designer.cs">
+      <DependentUpon>ActivityEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseEventForm.Designer.cs">
+      <DependentUpon>BaseEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DisplayActivityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DisplayActivityForm.Designer.cs">
+      <DependentUpon>DisplayActivityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DisplayFacebookEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DisplayFacebookEvent.Designer.cs">
+      <DependentUpon>DisplayFacebookEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DisplayGeneralEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DisplayGeneralEvent.Designer.cs">
+      <DependentUpon>DisplayGeneralEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DisplayPhotoEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DisplayPhotoEvent.Designer.cs">
+      <DependentUpon>DisplayPhotoEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DisplayPurchaseEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DisplayPurchaseEvent.Designer.cs">
+      <DependentUpon>DisplayPurchaseEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DisplayTweetEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DisplayTweetEvent.Designer.cs">
+      <DependentUpon>DisplayTweetEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DisplayVideoEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DisplayVideoEvent.Designer.cs">
+      <DependentUpon>DisplayVideoEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EventSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EventSelect.Designer.cs">
+      <DependentUpon>EventSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\Event.cs" />
+    <Compile Include="Events\EventActivity.cs" />
+    <Compile Include="Events\EventFacebookUpdate.cs" />
+    <Compile Include="ProgramManagement\EventFactory.cs" />
+    <Compile Include="Events\EventGeneral.cs" />
+    <Compile Include="Events\EventPhoto.cs" />
+    <Compile Include="Events\EventPurchase.cs" />
+    <Compile Include="Events\EventTweet.cs" />
+    <Compile Include="Events\EventVideo.cs" />
+    <Compile Include="Forms\FacebookEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FacebookEventForm.Designer.cs">
+      <DependentUpon>FacebookEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralEventForm.Designer.cs">
+      <DependentUpon>GeneralEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PhotoEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PhotoEventForm.Designer.cs">
+      <DependentUpon>PhotoEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseEventForm.Designer.cs">
+      <DependentUpon>PurchaseEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TweetEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TweetEventForm.Designer.cs">
+      <DependentUpon>TweetEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VideoEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VideoEventForm.Designer.cs">
+      <DependentUpon>VideoEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramManagement\EventList.cs" />
+    <Compile Include="ProgramManagement\EventPersonRelations.cs" />
+    <Compile Include="ProgramManagement\LLEManager.cs" />
+    <Compile Include="ProgramManagement\ManagerSingleton.cs" />
+    <Compile Include="ProgramManagement\Person.cs" />
+    <Compile Include="ProgramManagement\PersonList.cs" />
+    <Compile Include="Singletons and Definitions\Enums.cs" />
+    <Compile Include="Singletons and Definitions\Structs.cs" />
+    <Compile Include="Singletons and Definitions\XMLConstants.cs" />
+    <Compile Include="Singletons and Definitions\XMLFactory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ActivityEventForm.resx">
+      <DependentUpon>ActivityEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseEventForm.resx">
+      <DependentUpon>BaseEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DisplayActivityForm.resx">
+      <DependentUpon>DisplayActivityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DisplayFacebookEvent.resx">
+      <DependentUpon>DisplayFacebookEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DisplayGeneralEvent.resx">
+      <DependentUpon>DisplayGeneralEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DisplayPhotoEvent.resx">
+      <DependentUpon>DisplayPhotoEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DisplayPurchaseEvent.resx">
+      <DependentUpon>DisplayPurchaseEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DisplayTweetEvent.resx">
+      <DependentUpon>DisplayTweetEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DisplayVideoEvent.resx">
+      <DependentUpon>DisplayVideoEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EventSelect.resx">
+      <DependentUpon>EventSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FacebookEventForm.resx">
+      <DependentUpon>FacebookEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralEventForm.resx">
+      <DependentUpon>GeneralEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PhotoEventForm.resx">
+      <DependentUpon>PhotoEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseEventForm.resx">
+      <DependentUpon>PurchaseEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TweetEventForm.resx">
+      <DependentUpon>TweetEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VideoEventForm.resx">
+      <DependentUpon>VideoEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icon_not_selected.png" />
+    <Content Include="Resources\icon_selected.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
